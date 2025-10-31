@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #0f172a;
+  color: #e2e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container utama */
+.wrapper {
+  background-color: rgb(51 58 74);
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+/* Judul */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #cbd5e1;
+  font-size: 24px;
+}
+
+/* Bagian input */
+.input-section {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.input-section input {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  background-color: #0f172a;
+  color: #cbd5e1;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+#todo-input {
+  flex: 1;
+}
+
+#todo-date {
+  background-color: #0f172a;
+  color: #cbd5e1;
+}
+
+/* Tombol tambah */
+#add-btn {
+  background-color: #6366f1;
+  border: none;
+  color: #0f172a;
+  font-size: 18px;
+  width: 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+#add-btn:hover {
+  background-color: #4f46e5;
+}
+
+/* Tombol kontrol */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.controls button {
+  background-color: #334155;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #e2e8f0;
+  cursor: pointer;
+  font-weight: 500;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.controls button:hover {
+  background-color: #475569;
+}
+
+#clear-all-btn {
+  background-color: #6366f1;
+  color: #0f172a;
+}
+
+#clear-all-btn:hover {
+  background-color: #4f46e5;
+  color: #0f172a;
+}
+
+#filter-todos-btn {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #cbd5e1;
+}
+
+/* Tabel Todo */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background-color: #0f172a;
+  border-radius: 6px;
+  overflow: hidden;
+  color: #cbd5e1;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+thead {
+  background-color: #0f172a;
+}
+
+th,
+td {
+  padding: 10px;
+  color: #94a3b8;
+}
+
+tr:nth-child(even) {
+  background-color: #0f172a;
+}
+
+/* Tombol aksi */
+.delete-btn {
+  background-color: #ef4444;
+  border: none;
+  color: #cbd5e1;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.status-btn {
+  background-color: #10b981;
+  border: none;
+  color: #cbd5e1;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+/* Baris tanpa task */
+.no-task td {
+  text-align: center;
+  color: #cbd5e1;
+}
+footer{
+  color: #cbd5e1;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
