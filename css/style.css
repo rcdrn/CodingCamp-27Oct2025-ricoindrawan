@@ -63,7 +63,31 @@ h1 {
   color: #cbd5e1;
 }
 
-/* Ubah warna ikon kalender menjadi putih */
+/* Gaya umum untuk input tanggal */
+input[type="date"] {
+  background-color: #1e293b; /* warna latar (dark slate) */
+  color: white; /* warna teks tanggal */
+  border: 1px solid #334155;
+  padding: 8px;
+  border-radius: 6px;
+  outline: none;
+}
+
+/* Ubah warna ikon kalender bawaan browser (khusus Chrome, Edge, Safari modern) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* Membalik warna agar putih */
+  cursor: pointer;
+}
+
+/* Untuk Firefox */
+input[type="date"]::-moz-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+/* Fokus efek */
+input[type="date"]:focus {
+  border-color: #6366f1; /* warna ungu saat fokus */
+}
 
 /* Tombol tambah */
 #add-btn {
