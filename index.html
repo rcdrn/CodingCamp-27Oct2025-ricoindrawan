@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Todo List - Rico</title>
 
-  <!-- CSS External File Link -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Tailwind CSS CDN Link -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="flex justify-center items-center min-h-screen bg-slate-900 text-slate-200 font-[Poppins]">
@@ -18,36 +18,48 @@
   <!-- Wrapper -->
   <div class="wrapper bg-slate-800 p-8 rounded-2xl shadow-xl w-full max-w-lg">
 
-    <!-- Header Content -->
+    <!-- Header -->
     <header>
       <h1 class="text-2xl font-semibold text-center text-slate-300 mb-6">Todo List</h1>
     </header>
 
     <!-- Main Content -->
     <main>
-      <!-- Form Section -->
-      <section class="input-section flex gap-3 mb-4 justify-center">
-        <input class="flex-1 p-2 rounded-md outline-none text-slate-900" type="text" id="todo-input"
-          placeholder="Add a todo ..." />
-        <input class="p-2 rounded-md outline-none text-slate-900" type="date" id="todo-date" placeholder="mm/dd/yyyy" />
-        <button id="add-btn"
-          class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold px-4  rounded-md transition block mx-auto">+</button>
+      <!-- Input Section -->
+      <section class="input-section flex flex-wrap gap-3 mb-4 justify-center">
+        <input
+          class="flex-1 min-w-[140px] p-2 rounded-md outline-none text-slate-900"
+          type="text"
+          id="todo-input"
+          placeholder="Add a todo ..."
+        />
+        <input
+          class="p-2 rounded-md outline-none text-slate-900"
+          type="date"
+          id="todo-date"
+        />
+        <button
+          id="add-btn"
+          class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold px-4 py-2 rounded-md transition">
+          +
+        </button>
       </section>
 
-      <!-- Action Section -->
-      <section class="controls flex justify-between mb-4">
-        <button id="filter-todos-btn"
+      <!-- Controls -->
+      <section class="controls flex justify-between mb-4 flex-wrap gap-2">
+        <button
+          id="filter-todos-btn"
           class="bg-slate-700 hover:bg-slate-600 px-4 py-2 rounded-md text-sm font-medium">
           SHOW: ALL
         </button>
-        <button id="clear-all-btn"
+        <button
+          id="clear-all-btn"
           class="bg-slate-700 hover:bg-slate-600 px-4 py-2 rounded-md text-sm font-medium">
           DELETE ALL
         </button>
       </section>
-      
 
-      <!-- Todo List Section -->
+      <!-- Todo List Table -->
       <section>
         <table class="w-full text-left border-collapse bg-slate-900 rounded-lg overflow-hidden">
           <thead class="bg-slate-800 text-slate-300">
@@ -74,7 +86,7 @@
 
   </div>
 
-  <!-- Javascript External File Link -->
+  <!-- External JS -->
   <script src="js/script.js"></script>
 </body>
 
