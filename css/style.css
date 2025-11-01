@@ -58,15 +58,12 @@ h1 {
   flex: 1;
 }
 
-#todo-date {
-  background-color: #0f172a;
-  color: #cbd5e1;
-}
+
 
 /* Gaya umum untuk input tanggal */
 input[type="date"] {
-  background-color: #1e293b; /* warna latar (dark slate) */
-  color: white; /* warna teks tanggal */
+  background-color: #0f172a; /* warna latar (dark slate) */
+  color: #cbd5e1; /* warna teks tanggal */
   border: 1px solid #334155;
   padding: 8px;
   border-radius: 6px;
@@ -75,8 +72,9 @@ input[type="date"] {
 
 /* Ubah warna ikon kalender bawaan browser (khusus Chrome, Edge, Safari modern) */
 input[type="date"]::-webkit-calendar-picker-indicator {
-  filter: invert(1); /* Membalik warna agar putih */
-  cursor: pointer;
+  filter: invert(1);
+  /*Membalikwarnaagarputih*/cursor: pointer;
+  -webkit-filter: invert(1);
 }
 
 /* Untuk Firefox */
@@ -98,6 +96,7 @@ input[type="date"]:focus {
   width: 40px;
   border-radius: 6px;
   cursor: pointer;
+
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
